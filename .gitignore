@@ -1,0 +1,10 @@
+Run in the codveda-fullstack folder on your computer:
+
+  echo node_modules/ >> .gitignore
+  echo .env >> .gitignore
+  git rm -r --cached node_modules
+  git add .
+  git commit -m "Remove node_modules, add .gitignore entries"
+  git push
+
+Also check that no .env file was ever committed. If one was, change the database password.
