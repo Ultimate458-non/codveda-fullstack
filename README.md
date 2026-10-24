@@ -1,42 +1,42 @@
-# Codveda
+# Codveda · Users REST API
 
-This project is part of my #CodvedaJourney. It includes backend setup with Node.js and SQL Server, and will expand into a full-stack application.
+A Node.js and Express REST API with full CRUD on user records stored in SQL Server.
+Built during my full-stack internship at Codveda Technologies (Aug – Sep 2025).
 
-## Setup
-- Node.js
-- SQL Server via SSMS
-- GitHub integration
+## Endpoints
+| Method | Route | Action |
+|---|---|---|
+| GET | `/users` | List all users |
+| GET | `/users/:id` | Get one user |
+| POST | `/users` | Create a user |
+| PUT | `/users/:id` | Update a user |
+| DELETE | `/users/:id` | Delete a user |
 
+[Check the routes in `index.js` and edit the table if the paths differ.]
 
-# 🚀 Codveda– REST API
+## Tech
+`Node.js` `Express` `SQL Server` `mssql` `dotenv`
 
-Welcome to my #CodvedaJourney with **Codveda Technology**!  
-This project showcases a fully functional REST API built using **Node.js**, **Express**, and **SQL Server** — designed to handle user data with clean architecture and scalable endpoints.
+## Run it
+```bash
+git clone https://github.com/Ultimate458-non/codveda-fullstack.git
+cd codveda-fullstack
+npm install
+```
+Create a `.env` file (never commit it):
+```
+DB_USER=your_user
+DB_PASSWORD=your_password
+DB_SERVER=localhost
+DB_NAME=your_database
+```
+Then start the server:
+```bash
+node index.js
+```
 
----
+## Status
+Backend complete. A React front end is planned.
 
-## 🔧 Tech Stack
-
-- 🟢 Node.js
-- ⚙️ Express.js
-- 🗄️ SQL Server (via SSMS)
-- 🔌 `mssql` (Node.js driver)
-- 🔐 `dotenv` for environment variables
-
----
-
-## 📁 Features
-
-- ✅ GET all users
-- 🔍 GET user by ID
-- 🆕 POST new user
-- ✏️ PUT update user
-- ❌ DELETE user
-
----
-
-## 📦 Setup Instructions
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Ultimate458-non/codveda-fullstack.git
+## Author
+Ultimate Ngobeni · [Portfolio](https://ultimate-portfolio-six.vercel.app)
